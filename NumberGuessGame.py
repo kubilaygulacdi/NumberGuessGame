@@ -1,6 +1,7 @@
 import random
 
-def computerGuess(x):
+def computerGuess(x): 
+    #use this function if you want to a guess from computer(e.g x=100, A number will build between 1 and 100)
     low = 1
     high = x
     guess = ''
@@ -13,10 +14,10 @@ def computerGuess(x):
             low = randomNumber + 1
             
         
-    print(f"Tamin edilen sayı{randomNumber}")
+    print(f"Guessed number is {randomNumber}")
         
 
-def userGuess(x):
+def userGuess(x): #use this function if you want to make a guess yourself
     guess = 0
     random_number = random.randint(1,x)
    
@@ -29,6 +30,6 @@ def userGuess(x):
          
     print (f"You have guessed the number: {guess}")
 
-userGuess(10)
+
 
 
